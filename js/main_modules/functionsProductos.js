@@ -1,6 +1,5 @@
 import * as Botones from "./botones.js";
 import * as DomElements from "./domElements.js";
-import * as WhatsApp from "./whatsapp.js";
 
 // Setea los precios con los decimales separados por coma, en lugar de por punto
 export function toLocaleFixed (num) {
@@ -31,7 +30,6 @@ export function imprimirProductos(listadoProductos, productos) {
     }
 
     Botones.asignarBotonesAgregar(productos);
-    WhatsApp.asignarBotonesWhatsApp(productos);
 }
 
 export let carritoAgregados = []; // Declara el array de los productos agregados al Carrito
